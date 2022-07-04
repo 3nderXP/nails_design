@@ -24,8 +24,28 @@ body{
     background-color: var(--cor-fundo);
 }
 
+body::after{
+    content: 'Projeto incompleto';
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 40px;
+    background: linear-gradient(to right bottom, rgb(195, 155, 228), rgb(104, 17, 174));
+    color: #fff;
+    font-weight: bold;
+    font-size: 14pt;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .5);
+}
+
 a:hover{
-    color: var(--cor-destaque)
+    color: var(--cor-destaque);
+    cursor: pointer;
+}
+
+p{
+    line-height: 20pt;
 }
 
 #navbar{
@@ -55,7 +75,6 @@ a:hover{
 }
 
 #navbar .menus .menu a{
-    color: #000000;
     text-decoration: none;
     font-weight: 500;
 }
@@ -201,7 +220,7 @@ a:hover{
     overflow: hidden;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+    box-shadow: 0 30px 120px rgba(0, 0, 0, .2);
 }
 
 #content .featured-services .wrapper .service .image img{
@@ -211,6 +230,44 @@ a:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#content .row-section{
+    flex-direction: row;
+}
+
+#content .row-section .image{
+    max-width: 480px;
+    width: 100%;
+    flex: none;
+    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, .2));
+    border-radius: 40px;
+}
+
+#content .row-section .main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#content .row-section .main-content .button{
+    padding: 20px 40px;
+    color: #ffffff;
+    background-color: var(--cor-destaque);
+    border-radius: 1000px;
+    width: max-content;
+    text-decoration: none;
+    font-size: 14pt;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+}
+
+#content .video-example{
+    flex-direction: column;
+}
+
+#content .video-example .image{
+    max-width: 853px;
+    width: 100%;
 }
 
 #footer{
