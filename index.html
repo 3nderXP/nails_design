@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taty Nails Design</title>
+    <title>Nails Design</title>
     <link rel="stylesheet" href="./assets/css/global.css">
 </head>
 <body>
     <nav id="navbar">
-        <a class="logo">Taty Nails Design</a>
-        <ul class="menus">
+        <a class="logo">Nails Design</a>
+        <ul class="menus desktop">
             <li class="menu active"><a href="">Início</a></li>
             <li class="menu"><a href="#">Sobre mim</a></li>
             <li class="menu"><a href="#">Serviços</a></li>
             <li class="menu"><a href="#">Contato</a></li>
             <li class="menu"><a href="https://www.instagram.com/taty_nails_design_/">Instagram</a></li>
         </ul>
+        <span class="friesMenu mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="menuBar mobile">
+            <ul class="menus">
+                <li class="menu active"><a href="">Início</a></li>
+                <li class="menu"><a href="#">Sobre mim</a></li>
+                <li class="menu"><a href="#">Serviços</a></li>
+                <li class="menu"><a href="#">Contato</a></li>
+                <li class="menu"><a href="https://www.instagram.com/taty_nails_design_/">Instagram</a></li>
+            </ul>
+        </div>
     </nav>
     <header id="header">
         <div class="content">
@@ -24,7 +38,7 @@
             <p class="description">A beleza é realmente uma boa dádiva de Deus. Mas para que o bom não o considere um grande bem, Deus o dispensa até ao pavio. A beleza é a promessa de felicidade.</p>
             <a class="button" href="#">Agende agora</a>
         </div>
-        <img class="image" src="./assets/img/290646393_442660964037071_4459767212010619936_n.png">
+        <img class="image desktop" src="./assets/img/290646393_442660964037071_4459767212010619936_n.png">
     </header>
     <main id="content">
         <section class="services-resume">
@@ -91,7 +105,7 @@
             </div>
         </section>
         <section class="customers-reviews">
-            <h1 class="title">O que nossos clientes dizem</h1>
+            <h1 class="title">Veja as avaliações</h1>
             <div class="wrapper">
                 <div class="review">
                     <div class="message">
@@ -137,7 +151,7 @@
             <img class="image" src="./assets/img/support.png">
             <div class="main-content">
                 <h1 class="title">Entre em contato e saiba como podemos ajudar</h1>
-                <form class="form">
+                <form method="POST" class="form">
                     <input type="email" placeholder="Digite o seu email" name="email">
                     <input type="submit" value="Vamos conversar" name="submit">
                 </form>
@@ -161,10 +175,10 @@
                 </ul>
             </div>
             <div class="column three">
-                <h1 class="logo">Taty Nails Design</h1>
+                <a class="logo">Nails Design</a>
             </div>
             <div class="column four">
-                <p class="copyright">© Taty Nails Design 2019 - 2021</p>
+                <p class="copyright">© Nails Design 2019 - 2021</p>
             </div>
             <div class="column five terms-policy">
                 <a href="#">Termos & Serviços</a>
@@ -172,5 +186,6 @@
             </div>
         </div>
     </footer>
+    <script type="module" src="./assets/js/global.js"></script>
 </body>
 </html>
